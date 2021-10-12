@@ -1,64 +1,194 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/form.css">
-        <meta charset="UTF-8">
-        <title>Form khảo sát</title>
-    </head>
-    <body>
-        <header>
-            <h1>ANONYMOUS COFFEE</h1>
-            <h3>Phiếu đánh giá chất lượng dịch vụ</h3>
-            <hr>
-        </header>
-        <section>
-            <form action="thank_you.html">
-                <h2>CHÚNG TÔI MUỐN BIẾT VỀ BẠN</h2>
-                <div class="text-form">
-                    <div>
-                        <label for="fullname">Bạn tên là: </label>
-                        <input type="text" placeholder="Họ và tên bạn" id="fullname" required>
-                    </div>
-                    <div>
-                        <label for="birthday">Ngày sinh: </label>
-                        <input type="date" id="birthday" required>
-                    </div>
-                    <div>
-                        <label for="age">Tuổi</label>
-                        <input type="number" id="age" required>
-                    </div>
-                    <div>
-                        <label for="email">Email cá nhân: </label>
-                        <input type="email" id="email">
-                    </div>
-                    <div>
-                        <label for="phone-number">Số điện thoại</label>
-                        <input type="text" id="phone-number">
-                    </div>
-                    
-                </div>
-                <!-- <div>
-                    <h2>BẠN CẢM THẤY THẾ NÀO VỀ QUÁN CÀ PHÊ CỦA CHÚNG TÔI</h2>
-                    <div>
-                        <h4>Điểm: </h4>
-                        <ul>
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
-                            <li>5</li>
-                        </ul>
-                    </div>
-                </div> -->
-                <!-- <div>
-                    <input type="submit" id="submit">
-                </div> -->
-            </form>
-        </section>
-        <section>
 
-        </section>
-    </body>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/form.css">
+    <meta charset="UTF-8">
+    <title>Form khảo sát</title>
+</head>
+
+<body>
+    <header>
+        <h1>ANONYMOUS COFFEE</h1>
+        <h3>Phiếu đánh giá chất lượng dịch vụ</h3>
+        <hr>
+    </header>
+    <section>
+        <form action="thank_you.html">
+            <div class="text-form">
+                <div>
+                    <label for="fullname">Họ tên: </label>
+                    <input type="text" placeholder="Họ và tên bạn" id="fullname" required>
+                </div>
+                <div>
+                    <label for="birthday">Ngày sinh: </label>
+                    <input type="date" id="birthday" required>
+                </div>
+                <div>
+                    <label for="age">Tuổi:</label>
+                    <input type="number" id="age" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                </div>
+                <div>
+                    <label for="phone-number">Số điện thoại:</label>
+                    <input type="text" id="phone-number">
+                </div>
+
+            </div>
+            <div class="radio-group">
+                <h2>BẠN CẢM THẤY THẾ NÀO VỀ </h2>
+                <div class="pts-head">
+                    <h4>Điểm: </h4>
+                    <ul class="pts">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ul>
+                </div>
+                <div class="radio-body">
+                    <P>Chất lượng phục vụ</P>
+                    <div>
+                        <input type="radio" name="q1" id="1pts">
+                        <input type="radio" name="q1" id="2pts">
+                        <input type="radio" name="q1" id="3pts">
+                        <input type="radio" name="q1" id="4pts">
+                        <input type="radio" name="q1" id="5pts">
+                    </div>
+                </div>
+                <div class="radio-body">
+                    <P>Vệ sinh</P>
+                    <div>
+                        <input type="radio" name="q2" id="1pts">
+                        <input type="radio" name="q2" id="2pts">
+                        <input type="radio" name="q2" id="3pts">
+                        <input type="radio" name="q2" id="4pts">
+                        <input type="radio" name="q2" id="5pts">
+                    </div>
+                </div>
+                <div class="radio-body">
+                    <P>Phong cảnh</P>
+                    <div>
+                        <input type="radio" name="q3" id="1pts">
+                        <input type="radio" name="q3" id="2pts">
+                        <input type="radio" name="q3" id="3pts">
+                        <input type="radio" name="q3" id="4pts">
+                        <input type="radio" name="q3" id="5pts">
+                    </div>
+                </div>
+                <div class="radio-body">
+                    <P>Dịch vụ giải trí</P>
+                    <div>
+                        <input type="radio" name="q4" id="1pts">
+                        <input type="radio" name="q4" id="2pts">
+                        <input type="radio" name="q4" id="3pts">
+                        <input type="radio" name="q4" id="4pts">
+                        <input type="radio" name="q4" id="5pts">
+                    </div>
+                </div>
+                <div class="radio-body">
+                    <P>Nội thất</P>
+                    <div>
+                        <input type="radio" name="q5" id="1pts">
+                        <input type="radio" name="q5" id="2pts">
+                        <input type="radio" name="q5" id="3pts">
+                        <input type="radio" name="q5" id="4pts">
+                        <input type="radio" name="q5" id="5pts">
+                    </div>
+                </div>
+            </div>
+            <div class="checkbox-group">
+                <h3>Bạn có muốn tiệm của chúng tôi tổ thức dịp lễ nào không ?</h3>
+                <div class="checkbox">
+                    <div>
+                        <label for="Valentine">
+                            <input type="checkbox" name="Valentine" id="Valentine">Valentine
+                        </label>
+                    </div>
+                    <div>
+                        <label for="Haloween">
+                            <input type="checkbox" name="Haloween" id="Haloween">Haloween
+                        </label>
+                    </div>
+                    <div>
+                        <label for="Christmas">
+                            <input type="checkbox" name="Christmas" id="Christmas">Christmas
+                        </label>
+                    </div>
+                    <div>
+                        <label for="Easter">
+                            <input type="checkbox" name="Easter" id="Easter">Easter
+                        </label>
+                    </div>
+                    <div>
+                        <label for="other">
+                            <input type="checkbox" name="other" id="other">Khác
+                        </label>
+                    </div>
+                </div>
+                <h3>Về âm nhạc bạn có muốn tiệm chúng tôi thêm thể loại nào không ?(tối đa 2 lựa chọn)</h3>
+                <div class="checkbox">
+                    <div>
+                        <label for="K-pop">
+                            <input type="checkbox" name="K-pop" id="K-pop">K-pop
+                        </label>
+                    </div>
+                    <div>
+                        <label for="Classical">
+                            <input type="checkbox" name="Classical" id="Classical">Classical
+                        </label>
+                    </div>
+                    <div>
+                        <label for="Nhạc nhẹ">
+                            <input type="checkbox" name="Nhạc nhẹ" id="Nhạc nhẹ">Nhạc nhẹ
+                        </label>
+                    </div>
+                    <div>
+                        <label for="US-UK">
+                            <input type="checkbox" name="US-UK" id="US-UK">US-UK
+                        </label>
+                    </div>
+                    <div>
+                        <label for="Bolero">
+                            <input type="checkbox" name="Bolero" id="Bolero">Bolero
+                        </label>
+                    </div>
+                    <div>
+                        <label for="V-pop">
+                            <input type="checkbox" name="V-pop" id="V-pop">V-pop
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="select">
+                <h3>Bạn thích thức uống nào của tiệm chúng tôi nhất ?</h3>
+                <select class="select-box">
+                    <option>Cappuchino</option>
+                    <option>Latte</option>
+                    <option>Cold Brew</option>
+                    <option>Expresso</option>
+                    <option>Americano</option>
+                    <option>Phin</option>
+                </select>
+            </div>
+            <div class="area">
+                <h3>Hãy góp ý thêm cho chúng tôi</h3>
+                <textarea placeholder="Ý kiến thêm ở đây..."></textarea>
+            </div>
+            <div class="button">
+                <input type="submit" id="submit">
+            </div>
+        </form>
+    </section>
+    <section>
+
+    </section>
+</body>
+
 </html>
