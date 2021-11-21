@@ -3,23 +3,24 @@
 
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/form.css">
     <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+    </style>
     <title>Form khảo sát</title>
 </head>
 
 <body>
-    <header>
-        <h1>ANONYMOUS COFFEE</h1>
-        <h3>Phiếu đánh giá chất lượng dịch vụ</h3>
-        <hr>
-    </header>
-    <section>
+    <div id="outside">
         <form action="thank_you.html">
-            <div class="text-form">
+            <h1 id="title">Đánh giá chất lượng dịch vụ</h1>
+            <p id="description"><b>Châm ngôn</b>: Hãy chê theo cách của bạn</p>
+            <fieldset>
+                <legend>Thông tin cá nhân</legend>
                 <div>
-                    <label for="fullname">Họ tên: </label>
+                    <label id="name-label" for="user-name">Họ tên:</label>
                     <input type="text" placeholder="Họ và tên bạn" id="fullname" required>
                 </div>
                 <div>
@@ -28,23 +29,22 @@
                 </div>
                 <div>
                     <label for="age">Tuổi:</label>
-                    <input type="number" id="age" required>
+                    <input type="number" id="age" placeholder="Độ tuổi" required>
                 </div>
                 <div>
                     <label for="email">Email:</label>
-                    <input type="email" id="email">
+                    <input type="email" id="email" placeholder="Địa chỉ email">
                 </div>
                 <div>
                     <label for="phone-number">Số điện thoại:</label>
-                    <input type="text" id="phone-number">
+                    <input type="text" id="phone-number" placeholder="Số điện thoại">
                 </div>
-
-            </div>
-            <div class="radio-group">
-                <h2>BẠN CẢM THẤY THẾ NÀO VỀ </h2>
-                <div class="pts-head">
-                    <h4>Điểm: </h4>
-                    <ul class="pts">
+            </fieldset>
+            <fieldset>
+                <legend>Đánh giá dịch vụ</legend>
+                <div class="radio-group">
+                    <h2>Điểm: </h2>
+                    <ul class="scoring">
                         <li>1</li>
                         <li>2</li>
                         <li>3</li>
@@ -103,7 +103,8 @@
                     </div>
                 </div>
             </div>
-            <div class="checkbox-group">
+            </fieldset>
+            <!--<div class="checkbox-group">
                 <h3>Bạn có muốn tiệm của chúng tôi tổ thức dịp lễ nào không ?</h3>
                 <div class="checkbox">
                     <div>
@@ -183,12 +184,9 @@
             </div>
             <div class="button">
                 <input type="submit" id="submit">
-            </div>
+            </div> -->
         </form>
-    </section>
-    <section>
-
-    </section>
+    </div>
 </body>
 
 </html>

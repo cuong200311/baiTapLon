@@ -1,109 +1,132 @@
-* {
-    font-family: 'Roboto', sans-serif;
-    color:000;
-    box-sizing: border-box;
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    
 }
 
-header {
-    color:#fff;
-}
-header > h1{
-    text-align: center;
-    font-size: 6rem;
-    margin: 0;
-    padding-top: 1rem;
+#outside {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: yellowgreen;
 }
 
-header > h3 {
-    text-align: center;
-    font-size: 2rem;
-    font-style: italic;
-    margin: 0;
-    padding: 1rem;
-}
-
-hr {
-    border-top: 3px dashed white;
-    border-bottom: none;
-}
-
-section {
-    margin: auto;
-    background-color: #137fcc;
+form {
+    padding: 20px;
+    margin: 0 auto;
+    border: 1px solid #000;
     width: 70%;
     font-size: 1.2rem;
+    border-radius: 1rem;
+    background-color: #fff;
 }
 
-body {
-    background: linear-gradient(90deg, rgba(204,96,19,1) 35%, rgba(255,119,0,1) 100%);
+h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+fieldset {
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin: 20px;
+}
+
+legend {
+    font-weight:bold;
+}
+
+/* Tranh viec chon het the div -> xau UI */
+div + div {
+    margin-top: 1em;
+}
+
+input, textarea {
+    width: 220px;
+    height: 20px;
+    border: solid 1px black !important;
+}
+
+input:focus {
+    border: solid 1px red !important;
 }
 
 h2 {
-    text-align: center;
-    padding: 1rem;
-    font-size: 2rem !important;
-    margin: 0;
+    font-size: 1.3rem;
 }
 
-div.text-form {
+/*label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}*/
+
+div.radio-group {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    width: 90%;
-    margin:auto;
-    
 }
 
-label {
-    display:block;
-    margin: 0.7rem 00rem;
-}
-
-/* input[type="submit"] {
-    display:block;
-} */
-
-div.text-form > div {
-    width: 100%;
-    
-}
-
-div.text-form input{
-    width: 100%;
-    padding: 0.67rem 0rem;
-    transition: 0.5s;
-    border-radius:5px;
-    border: 1px solid black;
-}
-
-div.text-form input:focus{
-    background-color:lightblue;
-}
-
-ul.pts{
+ul.scoring {
     display: flex;
+    width: 70%;
+}
+
+ul > li {
     list-style-type: none;
-    padding:0;
-    width:50%;
-    margin: 0;
-}
-
-div.pts-head > h4{
-    margin: 0rem 1rem 0rem 0rem;
-}
-
-div.pts-head {
-    display:flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-ul.pts > li {
     width: 20%;
     text-align: center;
 }
 
-ul.pts > li:last-child {
+input[type="radio"] {
+    width: 30%;
+}
+
+div.radio-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+div.radio-body > div {
+    display: flex;
+    width: 70%;
+}
+
+/* div.text-form input {
+    width: 100%;
+    padding: 0.67rem 0rem;
+    transition: 0.5s;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+div.text-form input:focus {
+    background-color: lightblue;
+}
+
+ul.pts {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    width: 50%;
+    margin: 0;
+}
+
+div.pts-head>h4 {
+    margin: 0rem 1rem 0rem 0rem;
+}
+
+div.pts-head {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+ul.pts>li {
+    width: 20%;
+    text-align: center;
+}
+
+ul.pts>li:last-child {
     position: relative;
     right: 0.1rem;
 }
@@ -115,22 +138,22 @@ div.radio-body {
     margin-top: 2rem;
 }
 
-div.radio-body > p{
+div.radio-body>p {
     margin: 0;
 }
 
 div.radio-body input {
-    width:19%;
+    width: 19%;
     margin: 0;
     box-sizing: border-box;
-    position:relative;
+    position: relative;
     left: 0.2rem;
 }
 
-div.radio-body > div {
+div.radio-body>div {
     margin: 0;
     width: 50%;
-    position:relative;
+    position: relative;
 }
 
 div.radio-group {
@@ -142,11 +165,11 @@ div.checkbox label {
 }
 
 div.checkbox-group {
-    margin-left:2rem;
+    margin-left: 2rem;
     margin-top: 3rem;
 }
 
-div.checkbox > div {
+div.checkbox>div {
     margin: 2rem;
 }
 
@@ -154,10 +177,10 @@ div.checkbox input {
     margin-right: 1rem;
 }
 
-.select-box{
+.select-box {
     width: 80%;
     padding: 1rem 1rem;
-    border:none;
+    border: none;
     border-radius: 5px;
     margin-left: 10%;
 }
@@ -171,7 +194,7 @@ textarea {
     height: 10rem;
     padding: 1rem;
     margin-left: 10%;
-    resize:none;
+    resize: none;
 }
 
 input[type=submit] {
@@ -183,11 +206,11 @@ input[type=submit] {
     margin-top: 1rem;
     padding: 0.7rem 0rem;
     box-sizing: border-box;
-    transition:all 0.3s;
+    transition: all 0.3s;
 }
 
-input[type=submit]:hover{
-    border:3px solid black;
+input[type=submit]:hover {
+    border: 3px solid black;
 }
 
 input[type=submit]:active {
@@ -197,5 +220,4 @@ input[type=submit]:active {
 div.button {
     display: flex;
     justify-content: center;
-}
-
+} */
