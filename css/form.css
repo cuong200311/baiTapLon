@@ -38,7 +38,7 @@ legend {
 
 /* Tranh viec chon het the div -> xau UI */
 div + div {
-    margin-top: 1em;
+    margin-top: 2em;
 }
 
 input, textarea {
@@ -84,6 +84,7 @@ input[type="radio"] {
 div.radio-body{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 div.radio-body > div {
@@ -91,133 +92,23 @@ div.radio-body > div {
     width: 70%;
 }
 
-/* div.text-form input {
-    width: 100%;
-    padding: 0.67rem 0rem;
-    transition: 0.5s;
-    border-radius: 5px;
-    border: 1px solid black;
+select {
+    width: 300px;
+    height: 30px;
 }
 
-div.text-form input:focus {
-    background-color: lightblue;
-}
-
-ul.pts {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    width: 50%;
-    margin: 0;
-}
-
-div.pts-head>h4 {
-    margin: 0rem 1rem 0rem 0rem;
-}
-
-div.pts-head {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-ul.pts>li {
-    width: 20%;
+.button {
     text-align: center;
 }
 
-ul.pts>li:last-child {
-    position: relative;
-    right: 0.1rem;
-}
-
-div.radio-body {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 2rem;
-}
-
-div.radio-body>p {
-    margin: 0;
-}
-
-div.radio-body input {
-    width: 19%;
-    margin: 0;
-    box-sizing: border-box;
-    position: relative;
-    left: 0.2rem;
-}
-
-div.radio-body>div {
-    margin: 0;
-    width: 50%;
-    position: relative;
-}
-
-div.radio-group {
-    margin-left: 0.5rem;
-}
-
-div.checkbox label {
-    display: inline;
-}
-
-div.checkbox-group {
-    margin-left: 2rem;
-    margin-top: 3rem;
-}
-
-div.checkbox>div {
-    margin: 2rem;
-}
-
-div.checkbox input {
-    margin-right: 1rem;
-}
-
-.select-box {
-    width: 80%;
-    padding: 1rem 1rem;
-    border: none;
-    border-radius: 5px;
-    margin-left: 10%;
-}
-
-h3 {
+input[type="submit"] {
+    width: 300px;
+    height: 50px;
     text-align: center;
+    background-color: yellowgreen;
+    border: solid 1px yellowgreen;
+    border-radius: 1rem;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bold;
 }
-
-textarea {
-    width: 80%;
-    height: 10rem;
-    padding: 1rem;
-    margin-left: 10%;
-    resize: none;
-}
-
-input[type=submit] {
-    font-size: 1rem;
-    width: 30%;
-    height: 3rem;
-    margin: auto;
-    text-align: center;
-    margin-top: 1rem;
-    padding: 0.7rem 0rem;
-    box-sizing: border-box;
-    transition: all 0.3s;
-}
-
-input[type=submit]:hover {
-    border: 3px solid black;
-}
-
-input[type=submit]:active {
-    background-color: darkgray;
-}
-
-div.button {
-    display: flex;
-    justify-content: center;
-} */
