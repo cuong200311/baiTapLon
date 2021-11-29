@@ -1,0 +1,86 @@
+.header-div {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-div > a:visited, a:link {
+    color:black;
+}
+
+h1, hr {
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+div.item {
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    background-color: yellowgreen;
+    height: 300px;
+    padding-top: 150px;
+}
+
+div.arrow {
+    display: flex;
+    justify-content: center;
+    position:absolute;
+    left: 45%;
+    top: 57%;
+}
+
+div.arrow-body {
+    background-color: black;
+    width: 70px;
+    height: 30px;
+}
+
+div.arrow-head {
+    border: solid 30px black;
+    border-color: transparent transparent transparent black;
+    transform: translateY(-14px);
+}
+
+.button1 {
+    position: absolute;
+    background-color: yellow;
+    border: none;
+    border-radius: 1rem;
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    left: 55%;
+    top: 55%;
+    
+}
+
+.button2 {
+    position: absolute;
+    background-color: yellow;
+    border: none;
+    border-radius: 1rem;
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    right: 47%;
+    top: 55%;
+    
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+div.arrow2 {
+    transform: rotate(180deg);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 38%;
+    bottom: 36%;
+}
+
