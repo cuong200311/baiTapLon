@@ -8,43 +8,59 @@
     <meta charset="utf-8">
     <link href="css/contact.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script>
+        $(Document).ready(function() {
+            $("div.item").hide();
+            $("section.social-media").hide();
+            $("#item1").fadeIn(2000);
+            $("#item2").delay(800).fadeIn(2000);
+            window.scroll(function() {
+                
+            })
+        })
+    </script>
 </head>
 
 <body>
     <header>
         <div class="header-div">
             <a href="index.html"><i class="fas fa-coffee fa-6x" title="Trang chủ"></i></a>
-            <a href="#"><i class="fas fa-utensils fa-6x" title="Thực đơn"></i></a>
             <a href="#"><i class="fas fa-tag fa-6x" title="Khuyến mãi"></i></a>
             <a href="#"><i class="fab fa-product-hunt fa-6x" title="Sản phẩm"></i></a>
         </div>
         <hr>
     </header>
     <section>
-        <div class="item">
+        <div class="item" id="item1">
             <h1>Bạn muốn biết thêm về chúng tôi ?</h1>
-            <button class="button1">Tìm hiểu thêm</button>
-            <div class="arrow">
-                <div class="arrow-body"></div>
-                <div class="arrow-head"></div>
-
-            </div>
+            <button class="button">Tìm hiểu thêm</button>
         </div>
-        <div class="item">
+        <div class="item" id="item2">
             <h1>Có một số thắc mắc ?</h1>
-            <button class="button2">FAQ</button>
-            <div class="arrow2">
-                
-                <div class="arrow-body"></div>
-                <div class="arrow-head"></div>
-            </div>
+            <button class="button">FAQ</button>
         </div>
-        <div class="item">
+        <div class="item" id="item3">
             <h1>Chưa tìm được câu trả lời ?</h1>
-            <button class="button1">Liên hệ</button>
-            <div class="arrow">
-                <div class="arrow-body"></div>
-                <div class="arrow-head"></div>
+            <button class="button">Liên hệ email</button>
+        </div>
+    </section>
+    <section class="social-media">
+        <h1>Theo dõi chúng tôi tại</h1>
+        <div class="icon-list">
+            <div class="img-div">
+                <img class="icon" src="images/facebook.jpg">
+            </div>
+            <div class="img-div">
+                <img class="icon" src="images/twitter.jpg">
+            </div>
+            <div class="img-div">
+                <img class="icon" src="images/instagram.png">
+            </div>
+            <div class="img-div">
+                <img class="icon" src="images/line.png">
             </div>
         </div>
     </section>
