@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif; 
+    text-decoration: none;
+    list-style: none;
 }
 header  {
     background-color: #E9967A;
@@ -51,6 +53,7 @@ nav ul li:nth-child(3) input {
 nav ul li:nth-child(3) {
     position: relative;
     display: flex;
+    align-items: center;
 }
 nav ul li:nth-child(3) i {
     position: absolute;
@@ -214,4 +217,12 @@ nav ul li:nth-child(9):hover i {
 }
 .text-small h5 {
     padding-top: 5px;
+}
+.reward{
+    position: relative;
+}
+.buy {
+    position: absolute;
+    bottom: 0px;
+    left: 600px;
 }
