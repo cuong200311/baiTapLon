@@ -4,6 +4,11 @@
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
+
+h2 {
+    font-weight: bold;
+}
+
 .container ul li a {
     text-decoration: none;
 }

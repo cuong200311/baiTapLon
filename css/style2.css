@@ -108,6 +108,8 @@ nav ul li:nth-child(5):hover a {
     pointer-events: none;
     animation: btn 2s linear infinite;
 }
+
+
 @keyframes btn {
     from{
         opacity: 0.4;
@@ -225,4 +227,9 @@ nav ul li:nth-child(9):hover i {
     position: absolute;
     bottom: 0px;
     left: 600px;
+}
+.order {
+    width: 10rem;
+    height: 2rem;
+    background-color: #FFF200;
 }
