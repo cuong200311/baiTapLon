@@ -1,6 +1,24 @@
 * {
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
 }
+
+header  {
+    display: flex;
+    background-color: yellow;
+    align-items: center;
+}
+
+
+header img {
+    width: 100%;
+}
+
+header > h2 {
+    margin-left: 20%;
+    font-size: 3rem;
+}
+
 .header-div {
     padding: 20px;
     display: flex;
@@ -20,7 +38,7 @@ h1 {
     font-size: 5rem;
 }
 section > div.item:nth-child(2) {
-    background-color: blue;
+    background-color: yellow;
 }
 div.item {
     display: flex;
@@ -29,7 +47,7 @@ div.item {
     justify-content: center;
     font-size: 2rem;
     text-align: center;
-    background-color: yellow;
+    background-color: blue;
     height: 50rem;
     padding-top: 150px;
 }
@@ -65,7 +83,7 @@ img {
 }
 
 section.social-media {
-    background-color: blue;
+    background-color: yellow;
 }
 
 section.social-media > h1 {
