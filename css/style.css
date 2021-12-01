@@ -302,10 +302,32 @@ nav ul li:nth-child(9):hover i {
 .free{
     background-color: brown;
     color: cornsilk;
-    justify-content: space-around;
+    justify-content: space-between;
+    height: auto;
 }
 .free1 {
     display: flex;
     justify-content: space-around;
 }
-  
+.free2 i{
+    color: beige;
+}
+.free2 p {
+    padding: 2px;
+    margin: 0 auto;
+}
+.slider-item-text i{
+    color: black;
+}
+.qcao {
+    display: flex;
+    justify-content: space-between;
+}
+.qcao2 ul li a {
+    text-decoration: none;
+    color: black;
+}
+.qcao2 ul li a:hover{
+    color: red;
+    text-decoration: underline;
+}
