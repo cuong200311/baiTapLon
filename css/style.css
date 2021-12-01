@@ -242,7 +242,7 @@ nav ul li:nth-child(9):hover i {
 .submenu {
     position: absolute;
     background-color: #FFF200;
-    width: 300px;
+    width: 200px;
     height: auto;
     z-index: 998;
     left: 0;
