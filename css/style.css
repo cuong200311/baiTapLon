@@ -10,7 +10,9 @@
 ul {
     list-style: none;
 }
-
+.container ul {
+    margin: 0 auto;
+}
 li {
     list-style: none;
 }
@@ -112,27 +114,7 @@ nav ul li:nth-child(5):hover a {
     float: left;
     margin-right: 10px;
 }
-.btn-top {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 100%;
-    background-color: #FFF200;
-    display: block;
-    pointer-events: none;
-    animation: btn 2s linear infinite;
-}
-@keyframes btn {
-    from{
-        opacity: 0.4;
-    }
-    to{
-        transform: scale(3);
-        opacity: 0;
-    }
-}
+
 nav ul li:nth-child(6):hover a {
     color: #FFF200;
 }
@@ -232,6 +214,7 @@ nav ul li:nth-child(9):hover i {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
 }
 .menu-content ul li {
     padding: 12px 6px;
@@ -280,7 +263,7 @@ nav ul li:nth-child(9):hover i {
 }
 
 .container1 img {
-    height: 200px;
+    height: 300px;
     width: 100%;
 }
 .slidercontent-title h2 {
@@ -316,3 +299,13 @@ nav ul li:nth-child(9):hover i {
     width: 100%;
     transition: all 0.4s ease;
 }
+.free{
+    background-color: brown;
+    color: cornsilk;
+    justify-content: space-around;
+}
+.free1 {
+    display: flex;
+    justify-content: space-around;
+}
+  
