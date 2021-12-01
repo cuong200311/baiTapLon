@@ -6,20 +6,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/contact.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script>
-        $(Document).ready(function() {
-            $("div.item").hide();
-            $("section.social-media").hide();
-            $("#item1").fadeIn(2000);
-            $("#item2").delay(800).fadeIn(2000);
-            window.scroll(function() {
-                
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 900)
+                    $("section > div.item:nth-child(2) > *").fadeIn(1500);
+                if ($(window).scrollTop() > 1900)
+                    $("section > div.item:last-child > *").fadeIn(1500);
             })
+            $("div.item > *").hide();
+            $("section > div.item:first-child > *").fadeIn(2000);
         })
     </script>
 </head>
@@ -50,16 +52,16 @@
     <section class="social-media">
         <h1>Theo dõi chúng tôi tại</h1>
         <div class="icon-list">
-            <div class="img-div">
+            <div id="img1">
                 <img class="icon" src="images/facebook.jpg">
             </div>
-            <div class="img-div">
+            <div class="img-div" id="img2">
                 <img class="icon" src="images/twitter.jpg">
             </div>
-            <div class="img-div">
+            <div class="img-div" id="img3">
                 <img class="icon" src="images/instagram.png">
             </div>
-            <div class="img-div">
+            <div class="img-div" id="img4">
                 <img class="icon" src="images/line.png">
             </div>
         </div>
