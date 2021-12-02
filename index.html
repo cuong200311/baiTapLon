@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="javascript/index.js"></script>
 </head>
 <body>
     <header>
@@ -22,7 +23,7 @@
             <ul>
                 <li><a href="index.html"><img style="width: 100px;" src="./images/hinh1.png"></a></li>
                 <li id="address"><a href="#">Địa điểm <br> mua hàng <i class="fas fa-sort-down"></i></a></li>
-                <li><input type="text" placeholder="Bạn tìm gì ???"><i class="fas fa-search"></i></li>
+                <li><input type="text" placeholder="Tìm kiếm sản phẩm" id="searchId"><i class="fas fa-search" onclick="search();"></i></li>
                 <li><a href=""></a> <button><i class="fas fa-cart-plus"></i>Giỏ Hàng</button> </li>
                 <li><a href="">Lịch Sử <br> Mua Hàng</a></li>
                 <li><a href=""> <span class="btn"></span> Nạp tiền vào TK!!</a></li>
@@ -134,7 +135,7 @@
                     <div class="slider-item">
                         <a href="reward1.html"><img src="./images/hinh1.jpg" alt=""></a>
                         <div class="slider-item-text">
-                            <li>Máy pha cà phê viên nén Legend Era I</li>
+                            <li name="val">Máy pha cà phê viên nén Legend Era I</li>
                             <li>3.000.000 <sup>đ</sup> </li>
                             <li>
                                 <i class="fas fa-star"></i>
@@ -148,7 +149,7 @@
                     <div class="slider-item">
                         <a href="reward1.html"><img src="./images/hinh2.jpg" alt=""></a>
                         <div class="slider-item-text">
-                            <li>Máy pha cà phê tự động Scott </li>
+                            <li name="val">Máy pha cà phê tự động Scott </li>
                             <li>17.449.000 <sup>đ</sup> </li>
                             <li>
                                 <i class="fas fa-star"></i>
@@ -162,7 +163,7 @@
                     <div class="slider-item">
                         <img src="./images/hinh7.jpg" alt="">
                         <div class="slider-item-text">
-                            <li>Combo máy pha cà phê BFC 1 Group </li>
+                            <li name="val">Combo máy pha cà phê BFC 1 Group </li>
                             <li>63.900.000 <sup>đ</sup> </li>
                             <li>
                                 <i class="fas fa-star"></i>
@@ -176,7 +177,7 @@
                     <div class="slider-item">
                         <img src="./images/hinh3.jpg" alt="">
                         <div class="slider-item-text">
-                            <li>Trung Nguyên Legend Capuchino</li>
+                            <li name="val">Trung Nguyên Legend Capuchino</li>
                             <li>100.000 <sup>đ</sup> </li>
                             <li>
                                 <i class="fas fa-star"></i>
@@ -190,7 +191,7 @@
                     <div class="slider-item">
                         <img src="./images/hinh4.jpg" alt="">
                         <div class="slider-item-text">
-                            <li>Máy xay cà phê Fiorenzato F4 Eco</li>
+                            <li name="val">Máy xay cà phê Fiorenzato F4 Eco</li>
                             <li>12.900.000 <sup>đ</sup> </li>
                             <li>
                                 <i class="fas fa-star"></i>
@@ -223,7 +224,7 @@
                     <div class="slider-item">
                         <a href="reward1.html"><img src="./images/hinh1.jpg" alt=""></a>
                         <div class="slider-item-text">
-                            <li>Máy pha cà phê viên nén Legend Era I</li>
+                            <li name="val">Máy pha cà phê viên nén Legend Era I</li>
                             <li>3.000.000 <sup>đ</sup> </li>
                             <li>
                                 <i class="fas fa-star"></i>
@@ -237,7 +238,7 @@
                     <div class="slider-item">
                         <img src="./images/hinh2.jpg" alt="">
                         <div class="slider-item-text">
-                            <li>Máy pha cà phê tự động Scott </li>
+                            <li name="val">Máy pha cà phê tự động Scott </li>
                             <li>17.449.000 <sup>đ</sup> </li>
                             <li>
                                 <i class="fas fa-star"></i>
@@ -251,7 +252,7 @@
                     <div class="slider-item">
                         <img src="./images/hinh7.jpg" alt="">
                         <div class="slider-item-text">
-                            <li>Combo máy pha cà phê BFC 1 Group </li>
+                            <li name="val">Combo máy pha cà phê BFC 1 Group </li>
                             <li>63.900.000 <sup>đ</sup> </li>
                             <li>
                                 <i class="fas fa-star"></i>
@@ -265,7 +266,7 @@
                     <div class="slider-item">
                         <img src="./images/hinh3.jpg" alt="">
                         <div class="slider-item-text">
-                            <li>Trung Nguyên Legend Capuchino</li>
+                            <li name="val">Trung Nguyên Legend Capuchino</li>
                             <li>100.000 <sup>đ</sup> </li>
                             <li>
                                 <i class="fas fa-star"></i>
@@ -279,7 +280,7 @@
                     <div class="slider-item">
                         <img src="./images/hinh4.jpg" alt="">
                         <div class="slider-item-text">
-                            <li>Máy xay cà phê Fiorenzato F4 Eco</li>
+                            <li name="val">Máy xay cà phê Fiorenzato F4 Eco</li>
                             <li>12.900.000 <sup>đ</sup> </li>
                             <li>
                                 <i class="fas fa-star"></i>
@@ -311,7 +312,7 @@
                     <div class="slider-item">
                         <a href="reward1.html"><img src="./images/G72.jpg" alt=""></a>
                         <div class="slider-item-text">
-                            <li>Cà phê hòa tan G7 3 in 1</li>
+                            <li name="val">Cà phê hòa tan G7 3 in 1</li>
                             <li>200.000<sup>đ</sup> </li>
                             <li>
                                 <i class="fas fa-star"></i>
@@ -325,7 +326,7 @@
                     <div class="slider-item">
                         <img src="./images/G73.jpg" alt="">
                         <div class="slider-item-text">
-                            <li>Cà phê hòa tan G7 2 in 1 </li>
+                            <li name="val">Cà phê hòa tan G7 2 in 1 </li>
                             <li>200.000<sup>đ</sup> </li>
                             <li>
                                 <i class="fas fa-star"></i>
@@ -339,7 +340,7 @@
                     <div class="slider-item">
                         <img src="./images/G74.jpg" alt="">
                         <div class="slider-item-text">
-                            <li>Cà phê hòa tan G7 Cappuccino </li>
+                            <li name="val">Cà phê hòa tan G7 Cappuccino </li>
                             <li>200.000 <sup>đ</sup> </li>
                             <li>
                                 <i class="fas fa-star"></i>
@@ -353,7 +354,7 @@
                     <div class="slider-item">
                         <img src="./images/G75.jpg" alt="">
                         <div class="slider-item-text">
-                            <li>Cà phê hòa tan G7 - đen Trung Nguyên</li>
+                            <li name="val">Cà phê hòa tan G7 - đen Trung Nguyên</li>
                             <li>100.000 <sup>đ</sup> </li>
                             <li>
                                 <i class="fas fa-star"></i>
@@ -367,7 +368,7 @@
                     <div class="slider-item">
                         <img src="./images/G76.jpg" alt="">
                         <div class="slider-item-text">
-                            <li>Cà phê hòa tan G7 3 in 1</li>
+                            <li name="val">Cà phê hòa tan G7 3 in 1</li>
                             <li>900.000 <sup>đ</sup> </li>
                             <li>
                                 <i class="fas fa-star"></i>
@@ -384,7 +385,7 @@
                     <div class="slider-item">
                         <a href="reward1.html"><img src="./images/G76.jpg" alt=""></a>
                         <div class="slider-item-text">
-                            <li>Cà phê hòa tan G7 - đen Trung Nguyên</li>
+                            <li name="val">Cà phê hòa tan G7 - đen Trung Nguyên</li>
                             <li>200.000<sup>đ</sup> </li>
                             <li>
                                 <i class="fas fa-star"></i>
@@ -398,7 +399,7 @@
                     <div class="slider-item">
                         <img src="./images/G79.jpg" alt="">
                         <div class="slider-item-text">
-                            <li>Cà phê hòa tan G7 - đen Trung Nguyên </li>
+                            <li name="val">Cà phê hòa tan G7 - đen Trung Nguyên </li>
                             <li>200.000<sup>đ</sup> </li>
                             <li>
                                 <i class="fas fa-star"></i>
@@ -412,7 +413,7 @@
                     <div class="slider-item">
                         <img src="./images/G79.jpg" alt="">
                         <div class="slider-item-text">
-                            <li>Cà phê hòa tan G7 3 in 1 </li>
+                            <li name="val">Cà phê hòa tan G7 3 in 1 </li>
                             <li>200.000 <sup>đ</sup> </li>
                             <li>
                                 <i class="fas fa-star"></i>
@@ -426,7 +427,7 @@
                     <div class="slider-item">
                         <img src="./images/G72.jpg" alt="">
                         <div class="slider-item-text">
-                            <li>Trung Nguyên Legend Capuchino</li>
+                            <li name="val">Trung Nguyên Legend Capuchino</li>
                             <li>100.000 <sup>đ</sup> </li>
                             <li>
                                 <i class="fas fa-star"></i>
@@ -440,7 +441,7 @@
                     <div class="slider-item">
                         <img src="./images/G76.jpg" alt="">
                         <div class="slider-item-text">
-                            <li>Cà phê hòa tan G7 3 in 1</li>
+                            <li name="val">Cà phê hòa tan G7 3 in 1</li>
                             <li>900.000 <sup>đ</sup> </li>
                             <li>
                                 <i class="fas fa-star"></i>
@@ -473,7 +474,7 @@
                     <div class="slider-item">
                         <a href="reward1.html"><img src="./images/g82.jpg" alt=""></a>
                         <div class="slider-item-text">
-                            <li>Cà phê hòa tan G7 3 in 1</li>
+                            <li name="val">Cà phê hòa tan G7 3 in 1</li>
                             <li>200.000<sup>đ</sup> </li>
                             <li>
                                 <i class="fas fa-star"></i>
@@ -487,7 +488,7 @@
                     <div class="slider-item">
                         <img src="./images/g83.jpg" alt="">
                         <div class="slider-item-text">
-                            <li>Cà phê hòa tan G7 2 in 1 </li>
+                            <li name="val">Cà phê hòa tan G7 2 in 1 </li>
                             <li>200.000<sup>đ</sup> </li>
                             <li>
                                 <i class="fas fa-star"></i>
@@ -501,7 +502,7 @@
                     <div class="slider-item">
                         <img src="./images/g84.jpg" alt="">
                         <div class="slider-item-text">
-                            <li>Cà phê hòa tan G7 Cappuccino </li>
+                            <li name="val">Cà phê hòa tan G7 Cappuccino </li>
                             <li>200.000 <sup>đ</sup> </li>
                             <li>
                                 <i class="fas fa-star"></i>
@@ -515,7 +516,7 @@
                     <div class="slider-item">
                         <img src="./images/g85.png" alt="">
                         <div class="slider-item-text">
-                            <li>Cà phê hòa tan G7 - đen Trung Nguyên</li>
+                            <li name="val">Cà phê hòa tan G7 - đen Trung Nguyên</li>
                             <li>100.000 <sup>đ</sup> </li>
                             <li>
                                 <i class="fas fa-star"></i>
@@ -529,7 +530,7 @@
                     <div class="slider-item">
                         <img src="./images/g86.jpg" alt="">
                         <div class="slider-item-text">
-                            <li>Cà phê hòa tan G7 3 in 1</li>
+                            <li name="val">Cà phê hòa tan G7 3 in 1</li>
                             <li>900.000 <sup>đ</sup> </li>
                             <li>
                                 <i class="fas fa-star"></i>
