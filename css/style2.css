@@ -299,6 +299,7 @@ nav ul li:nth-child(9):hover i {
 }
 .buttonn {
     text-align: center;
+    padding-bottom: 20px;
 }
 .buttonn input {
     width: 700px;
@@ -311,6 +312,7 @@ nav ul li:nth-child(9):hover i {
     color: cornsilk;
     justify-content: space-between;
     height: auto;
+    
 }
 .free1 {
     display: flex;
