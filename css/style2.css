@@ -110,21 +110,10 @@ nav ul li:nth-child(4) button:hover {
 nav ul li:nth-child(5) {
     text-align: center;
 }
-nav ul li:nth-child(5):hover a {
+nav ul li > a {
     color: #FFF200;
 } 
-nav ul li:nth-child(6):hover a {
-    color: #FFF200;
-}
-nav ul li:nth-child(7):hover a {
-    color: #FFF200;
-}
-nav ul li:nth-child(8):hover a {
-    color: #FFF200;
-}
-nav ul li:nth-child(9):hover a {
-    color: #FFF200;
-}
+
 .address {
     position: fixed;
     width: 100vw;
