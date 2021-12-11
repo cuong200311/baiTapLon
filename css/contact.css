@@ -42,7 +42,7 @@ h1, hr {
 }
 
 body {
-    background-image: url("/images/main-background.jpg");
+    background-image: url("/images/contactbackground.jpg");
     background-size: 100%;
 }
 
@@ -73,14 +73,16 @@ div.item {
     width: 15rem;
     height: 5rem;
     font-weight: bold;
+    opacity:0.7;
     transition: opacity 0.5s;
+    cursor: pointer;
     
 }
 
 
 button:hover {
     opacity: 1;
-    animation: zoom-in-out 2s ease-in-out;
+    animation: zoom-in-out 0.8s ease-in-out;
 }
 
 @keyframes zoom-in-out {
@@ -88,7 +90,7 @@ button:hover {
         transform: scale(1.0);
     }
     66% {
-        transform: scale(1.5);
+        transform: scale(1.2);
     }
     100% {
         transform: scale(1.0);
