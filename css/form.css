@@ -4,6 +4,7 @@ body {
     
 }
 
+
 #outside {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -44,23 +45,21 @@ div + div {
 input, textarea {
     width: 220px;
     height: 20px;
-    border: solid 1px black !important;
+    border: solid 3px black;
     resize: none;
+    outline: none;
+    transition: all 1s;
 }
 
-input:focus {
-    border: solid 1px red !important;
+input:focus , textarea:focus{
+    border: solid 3px yellowgreen;
+    background-color: yellowgreen;
+    opacity: 0.7;
 }
 
 h2 {
     font-size: 1.3rem;
 }
-
-/*label {
-    display: inline-block;
-    width: 100px;
-    text-align: right;
-}*/
 
 div.radio-group {
     display: flex;
