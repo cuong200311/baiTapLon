@@ -4,8 +4,8 @@
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif; 
     text-decoration: none;
+    font-size: 20px;
 }
-
 
 header  {
     background-color: #E9967A;
@@ -16,6 +16,7 @@ h1 {
     position: absolute;
     top: 60px;
     left: 450px;
+    font-size: 50px;
 }
 nav {
     background-color: black;
@@ -29,7 +30,32 @@ nav ul {
 } 
 nav ul li a {
     color: blanchedalmond;
-    font-size: 12px;
+    font-size: 15px;
+}
+.container ul li a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.container ul {
+    margin: 0 auto;
+}
+i {
+    color: white;
+}
+nav {
+    background-color: black;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+   width: 1200px;
+} 
+nav ul li a {
+    color: blanchedalmond
 }
 .container {
     width: 1300px;
@@ -69,7 +95,7 @@ nav ul li:nth-child(4) button {
     height: 30px;
     padding: 0 6px;
     cursor: pointer;
-    background-color: transparent;
+    background-color:  transparent;
     color: white;
     border: 1px solid rgb(231, 229, 229);
     border-radius: 5px;
@@ -87,7 +113,6 @@ nav ul li:nth-child(5) {
 nav ul li:nth-child(5):hover a {
     color: #FFF200;
 } 
-
 nav ul li:nth-child(6):hover a {
     color: #FFF200;
 }
@@ -99,9 +124,6 @@ nav ul li:nth-child(8):hover a {
 }
 nav ul li:nth-child(9):hover a {
     color: #FFF200;
-}
-nav ul li:nth-child(9):hover i {
-    margin-right: 5px;
 }
 .address {
     position: fixed;
@@ -167,6 +189,9 @@ nav ul li:nth-child(9):hover i {
     height: 300px;
     display: flex;
 }
+.slider-item-text li i {
+    color: black;
+}
 .image {
     width: 40%;
 }
@@ -176,6 +201,7 @@ nav ul li:nth-child(9):hover i {
 }
 .text {
     width: 60%;
+    margin-top: 10px;
 }
 .text-big p {
     margin-left: 10px;
@@ -196,7 +222,7 @@ nav ul li:nth-child(9):hover i {
 .buy {
     position: absolute;
     bottom: 0px;
-    left: 600px;
+    left: 60px;
 }
 .order {
     width: 10rem;
@@ -220,6 +246,7 @@ nav ul li:nth-child(9):hover i {
 }
 .sale {
     padding-top: 30px;
+    margin-bottom: 10px;
 }
 .sale p {
     text-align: center;
@@ -266,6 +293,7 @@ nav ul li:nth-child(9):hover i {
     text-align: center;
     padding-top: 20px;
     font-size: 25px;
+    margin-bottom: 10px;
 }
 .buttonn {
     text-align: center;
@@ -276,37 +304,4 @@ nav ul li:nth-child(9):hover i {
     height: 50px;
     border-radius: 5px;
     border: 1px solid black;
-}
-.free{
-    background-color: brown;
-    color: cornsilk;
-    justify-content: space-between;
-    height: auto;
-    
-}
-.free1 {
-    display: flex;
-    justify-content: space-around;
-}
-.free2 i{
-    color: beige;
-}
-.free2 p {
-    padding: 2px;
-    margin: 0 auto;
-}
-.slider-item-text i{
-    color: black;
-}
-.qcao {
-    display: flex;
-    justify-content: space-between;
-}
-.qcao2 ul li a {
-    text-decoration: none;
-    color: black;
-}
-.qcao2 ul li a:hover{
-    color: red;
-    text-decoration: underline;
 }
