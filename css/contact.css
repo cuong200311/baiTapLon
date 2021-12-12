@@ -13,28 +13,21 @@ header  {
     display: flex;
     background-color: yellow;
     align-items: center;
-    
+    justify-content: space-between;
 }
 
-
+.header-img {
+    width: 20%;
+}
 header img {
     width: 100%;
 }
 
 header > h2 {
-    margin-left: 20%;
-    font-size: 3rem;
+    font-size: 50px;
     color: black;
-}
-
-.header-div {
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.header-div > a:visited, a:link {
-    color:black;
+    width: 80%;
+    text-align: center;
 }
 
 h1, hr {
@@ -110,7 +103,7 @@ div.icon-list > div {
     
 }
 
-img {
+section.social-media img {
     width: 100%;
     border-radius: 15px;
 }

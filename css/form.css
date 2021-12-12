@@ -4,6 +4,24 @@ body {
     
 }
 
+div.to-index {
+    position: fixed;
+    bottom: 93%;
+    left: 1%;
+    background-color: blue;
+}
+
+div.to-index > a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+    transition: all 1s;
+}
+
+div.to-index > a:hover {
+    opacity: 0.8;
+}
+
 
 #outside {
     padding-top: 50px;
